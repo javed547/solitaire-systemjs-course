@@ -28,26 +28,26 @@ node {
 }
 
 // demoing a second agent
-node('windows') {
+//node('windows') {
     // on windows use: bat 'dir'
-    bat 'dir'
+//    bat 'dir'
 
     // on windows use: bat 'del /S /Q *'
-    bat 'del /S /Q *'
+//    bat 'del /S /Q *'
 
-    unstash 'everything'
+//    unstash 'everything'
 
     // on windows use: bat 'dir'
-    bat 'dir'
-}
+//    bat 'dir'
+//}
 
 //parallel integration testing
-stage 'Browser Testing'
-parallel chrome: {
-    runTests("Chrome")
-}, firefox: {
-    runTests("Firefox")
-}
+//stage 'Browser Testing'
+//parallel chrome: {
+//    runTests("Chrome")
+//}, firefox: {
+//    runTests("Firefox")
+//}
 //, safari: {
 //    runTests("Safari")
 //}
